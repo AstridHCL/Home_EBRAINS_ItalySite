@@ -1,3 +1,4 @@
+/*** 
 ====================================================================
   Reset
 ====================================================================
@@ -516,6 +517,8 @@ img {
   transform: translateY(-50%);
 }
 
+
+
 /*** Search Popup ***/
 
 .search-popup {
@@ -802,14 +805,17 @@ img {
 
 .header-style-one .logo-container{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 30px; /* Add padding if needed */
+  width: 100%;
+  padding-top: 20px;        /* Add upper padding */
 }
 
 .header-style-one .logo-box {
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding-top: 30px;  
 }
 
 .header-style-one .left-logos {
@@ -852,7 +858,7 @@ img {
   display: inline-block;
   overflow: hidden;
   vertical-align: middle;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 24px;
   font-family: 'Saira', sans-serif;
   font-weight: 600;
@@ -863,7 +869,8 @@ img {
   z-index: 1;
 }
 
-.header-btn i{
+.header-btn i,
+.header-btn img{
   position: absolute;
   display: flex;
   align-items: center;
@@ -880,7 +887,8 @@ img {
   clip-path: polygon(0% -50%, 100% 50%, 50% 100%, 0% 100%, 0% 0%);
 }
 
-.header-btn i:before{
+.header-btn i:before,
+.header-btn img:before {
   position: relative;
   left: -6px;
 }
@@ -2163,6 +2171,7 @@ div#mCSB_1_container{
   position: relative;
   display: block;
   padding: 29px 15px 27px 30px;
+  height: 200px;
 }
 
 .service-block-one .inner-box .lower-content h3{
