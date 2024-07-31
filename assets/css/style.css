@@ -460,6 +460,7 @@ img {
   -webkit-transition:all 500ms ease;
   -ms-transition:all 500ms ease;
   -o-transition:all 500ms ease;
+  height: 200px; /* Adjust this value to make the header smaller */
 }
 
 .fixed-header .sticky-header{
@@ -1870,7 +1871,7 @@ div#mCSB_1_container{
 .about-section .image-box .text{
   position: absolute;
   left: 40px;
-  bottom: -20px;
+  bottom: -40px;
   width: 180px;
   height: 180px;
   line-height: 180px;
