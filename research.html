@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<title>EBRAINS-Italy Preview</title>
+
+<!-- Fav Icon -->
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link href="assets/css/font-awesome-all.css" rel="stylesheet">
+<link href="assets/css/flaticon.css" rel="stylesheet">
+<link href="assets/css/owl.css" rel="stylesheet">
+<link href="assets/css/jquery.fancybox.min.css" rel="stylesheet">
+<link href="assets/css/animate.css" rel="stylesheet">
+<link href="assets/css/nice-select.css" rel="stylesheet">
+<link href="assets/css/timePicker.css" rel="stylesheet">
+<link href="assets/css/jquery-ui.css" rel="stylesheet">
+<link href="assets/css/color.css" rel="stylesheet">
+<link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/responsive.css" rel="stylesheet">
+<link href="assets/css/template_extra.css" rel="stylesheet">
+
+<!-- Custom Styles -->
+<style>
+    :root {
+        --primary-color: #0d6efd;
+        --secondary-color: #6c757d;
+        --success-color: #198754;
+        --info-color: #0dcaf0;
+        --warning-color: #ffc107;
+        --danger-color: #dc3545;
+        --light-color: #f8f9fa;
+        --dark-color: #212529;
+        --font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        --font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --body-font-family: var(--font-sans-serif);
+        --body-font-size: 1rem;
+        --body-font-weight: 400;
+        --body-line-height: 1.5;
+        --body-color: #212529;
+        --body-bg: #fff;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .project-block-one {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 0.375rem;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .project-block-one:hover {
+        transform: translateY(-10px);
+    }
+
+    .project-block-one .inner-box {
+        position: relative;
+    }
+
+    .project-block-one .static-content, .project-block-one .overlay-content {
+        padding: 1rem;
+    }
+
+    .project-block-one .image-box img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-block-one .lower-content {
+        margin-top: 1rem;
+    }
+
+    .project-block-one .category {
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-block-one h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .project-block-one p {
+        margin-bottom: 0;
+    }
+
+
+</style>
+
+</head>
+<body>
+
+    <div class="boxed_wrapper">
+
+
+        <!-- preloader -->
+        <div class="loader-wrap">
+            <div class="preloader">
+                <div class="preloader-close">x</div>
+                <div id="handle-preloader" class="handle-preloader">
+                    <div class="animation-preloader">
+                        <div class="spinner"></div>
+                        <div class="txt-loading">
+                            <span data-text-preloader="E" class="letters-loading"> E </span>
+                            <span data-text-preloader="B" class="letters-loading"> B </span>
+                            <span data-text-preloader="R" class="letters-loading"> R </span>
+                            <span data-text-preloader="A" class="letters-loading"> A </span>
+                            <span data-text-preloader="I" class="letters-loading"> I </span>
+                            <span data-text-preloader="N" class="letters-loading"> N </span>
+                            <span data-text-preloader="S" class="letters-loading"> S </span>
+                            <span data-text-preloader="-" class="letters-loading"> - </span>
+                            <span data-text-preloader="I" class="letters-loading"> I </span>
+                            <span data-text-preloader="t" class="letters-loading"> t </span>
+                            <span data-text-preloader="a" class="letters-loading"> a </span>
+                            <span data-text-preloader="l" class="letters-loading"> l </span>
+                            <span data-text-preloader="y" class="letters-loading"> y </span>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <!-- preloader end -->
+
+
+        <!--Search Popup-->
+        <div id="search-popup" class="search-popup">
+            <div class="popup-inner">
+                <div class="upper-box clearfix">
+                    <figure class="logo-box pull-left"><a href="index.html"><img src="assets/images/logo.png" alt=""></a></figure>
+                    <div class="close-search pull-right"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <div class="overlay-layer"></div>
+                <div class="auto-container">
+                    <div class="search-form">
+                        <form method="post" action="index.html">
+                            <div class="form-group">
+                                <fieldset>
+                                    <input type="search" class="form-control" name="search-input" value="" placeholder="Type your keyword and hit" required >
+                                    <button type="submit"><i class="flaticon-magnifying-glass"></i></button>
+                                </fieldset>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- main header -->
+        <header class="main-header header-style-one">
+            <div class="logo-box">
+                <figure class="logo"><a href="index.html"><img src="assets/images/Loghi Mur/Loghi MUR.svg" alt=""></a></figure>
+            </div>
+            <div class="btn-box">
+                <a href="https://whatsapp.com/channel/0029VafC0jrC1FuDZrbp9A2q" class="header-btn"><img src="assets/images/icons/WhatsappCh.png" alt="WhatsApp Icon" style="width:50px; height:50px;"> Connect</a>
+            </div>
+
+            <!-- header-top -->
+            <div class="header-top">
+                <div class="auto-container">
+                    <div class="top-inner">
+                        <div class="top-right">
+                            <div class="language">
+                                <span>En</span>
+                                <ul class="language-list clearfix">
+                                    <li><a href="index.html">English</a></li>
+                                    <li><a href="index.html">Italian</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- header-lower -->
+<div class="header-lower">
+    <div class="auto-container">
+        <div class="outer-box">
+            <div class="menu-area clearfix">
+                <!--Mobile Navigation Toggler-->
+                <div class="mobile-nav-toggler">
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                    <i class="icon-bar"></i>
+                </div>
+                <nav class="main-menu navbar-expand-md navbar-light">
+                    <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                        <ul class="navigation clearfix">
+                            <li><a href="index.html">Home</a></li>
+                            <li class="dropdown"><a href="index.html">About Us</a>
+                                <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="index-3.html">Project</a></li>
+                                    <li><a href="index-3.html">Coordination team</a></li>
+                                    <li><a href="index-3.html">Partnership</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="index.html">Research</a>
+                                <ul>
+                                    <li><a href="about.html">Research Teams</a></li>
+                                    <li><a href="index-2.html">Publications</a></li>
+                                </ul>
+                            </li> 
+                            <li class="dropdown"><a href="index.html">Resources</a>
+                                <ul>
+                                    <li><a href="about.html">Data & Models</a></li>
+                                    <li><a href="team.html">HPC Cloud & Storage</a></li>
+                                    <li><a href="faq.html">Catalogue</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="index.html">Services</a>
+                                <ul>
+                                    <li><a href="team.html">Facilities</a></li>
+                                    <li><a href="faq.html">Trans-National Access (TNA)</a></li>
+                                    <li class="dropdown"><a href="index.html">Training</a>
+                                        <ul>
+                                            <li><a href="shop.html">Training & Innovation Centre</a></li>
+                                            <li><a href="shop-details.html">Activities</a></li>
+                                            <li><a href="cart.html">Training Committee</a></li>
+                                            <li><a href="checkout.html">Ebrains School</a></li>
+                                            <li><a href="account.html">More Info</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="error.html">Incubation / Acceleration </a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown"><a href="index.html">News & Call</a>
+                                <ul>
+                                    <li><a href="services.html">News</a></li>
+                                    <li><a href="service-details.html">Jobs</a></li>
+                                    <li><a href="service-details-2.html">Events</a></li>
+                                    <li><a href="service-details-3.html">Press review</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href="contact.html">Connect</a></li> 
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <!-- Move this section inside the outer-box -->
+            <ul class="menu-right-content">
+                <li class="user-box">
+                    <a href="index.html"><i class="flaticon-add-user"></i></a>
+                </li>
+                <li class="search-box-outer search-toggler">
+                    <i class="flaticon-magnifying-glass"></i>
+                </li>
+            </ul>
+        </div>
+    </div>                
+</div>
+
+
+            <!--sticky Header-->
+            <div class="sticky-header">
+                <div class="auto-container">
+                    <div class="logo-container">
+                        <div class="logo-box">
+                            <figure class="logo"><a href="index.html"><img src="assets/images/Loghi Mur/Loghi MUR.svg" alt=""></a></figure>
+                        </div>
+                    </div>
+                    <div class="outer-box">
+                        <div class="menu-area clearfix">
+                            <nav class="main-menu clearfix">
+                                <!-- Menu items go here -->
+                            </nav>
+                        </div>
+                        <ul class="menu-right-content">
+                            <li class="user-box">
+                                <a href="index.html"><i class="flaticon-add-user"></i></a>
+                            </li>
+                            <li class="search-box-outer search-toggler">
+                                <i class="flaticon-magnifying-glass"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+        </header>
+        <!-- main-header end -->
+
+        <!-- Mobile Menu  -->
+        <div class="mobile-menu">
+            <div class="menu-backdrop"></div>
+            <div class="close-btn"><i class="fas fa-times"></i></div>
+            
+            <nav class="menu-box">
+                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo-2.png" alt="" title=""></a></div>
+                <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+                <div class="contact-info">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>Chicago 12, Melborne City, USA</li>
+                        <li><a href="tel:+8801682648101">+88 01682648101</a></li>
+                        <li><a href="mailto:info@example.com">info@example.com</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <ul class="clearfix">
+                        <li><a href="index.html"><span class="fab fa-twitter"></span></a></li>
+                        <li><a href="index.html"><span class="fab fa-facebook-square"></span></a></li>
+                        <li><a href="index.html"><span class="fab fa-pinterest-p"></span></a></li>
+                        <li><a href="index.html"><span class="fab fa-instagram"></span></a></li>
+                        <li><a href="index.html"><span class="fab fa-youtube"></span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div><!-- End Mobile Menu -->
+
+    <!-- page-title -->
+    <section class="page-title">
+        <div class="bg-layer" style="background-image: url(assets/images/background/research_teams.jpeg);"></div>
+        <div class="auto-container">
+            <div class="content-box">
+                <h1>Research Teams</h1>
+                <ul class="bread-crumb clearfix">
+                    <li><a href="index.html">Research</a></li>
+                    <li>Research Teams</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- page-title end -->
+
+    <!-- research-page-section -->
+    <section class="research-page-section sec-pad">
+        <div class="auto-container">
+            <div class="sortable-masonry">
+                <div class="filters centred">
+                    <ul class="filter-tabs filter-btns clearfix">
+                        <li class="active filter" data-role="button" data-filter=".all">All / 27</li>
+                        <li class="filter" data-role="button" data-filter=".modeling">Brain Modeling / 14</li>
+                        <li class="filter" data-role="button" data-filter=".experimental"> Experimental Labs / 08</li>
+                        <li class="filter" data-role="button" data-filter=".development">Research development / 01</li>
+                    </ul>
+                </div>
+                <div class="items-container row clearfix">
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all development">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/IBF_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Research development</span>
+                                        <h3><a href="index.html">Automating workflows, modeling, and large-scale hippocampal simulations</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/IBF_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="https://ebrains-italy.eu/research-groups/5?research_groups=CNR-IBFc" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="https://ebrains-italy.eu/research-groups/5?research_groups=CNR-IBFc"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Research development</span>
+                                        <h3><a href="index.html">Automating workflows, modeling, and large-scale hippocampal simulations</a></h3>
+                                        <p>Cellular level Simulation of the rat, mouse, and human Hippocampus under physiological and pathological...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modeling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/UCBM-White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Simulated brain dynamics with structural imaging</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/UCBM-Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="index.html " class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="index.html"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Brain dynamics for in-silico simulations interfaced with structural imaging data </a></h3>
+                                        <p> TBD </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all development">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/IBF_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Research development</span>
+                                        <h3><a href="index.html">EBRAINS-Italy Resources (EIR) Allocation Program</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/IBF_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="https://ebrains-italy.eu/research-groups/5?research_groups=CNR-IBFc" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="https://ebrains-italy.eu/research-groups/5?research_groups=CNR-IBFc"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Research development</span>
+                                        <h3><a href="index.html">EBRAINS-Italy Resources (EIR) Allocation Program</a></h3>
+                                        <p>Submission form for open-science project proposals </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all experimental">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/IBF_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html">Protein characterization and drug delivery engineering</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/IBF_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="https://ebrains-italy.eu/research-groups/5?research_groups=CNR-IBFb" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="https://ebrains-italy.eu/research-groups/5?research_groups=CNR-IBFb"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html">Protein characterization and drug delivery engineering</a></h3>
+                                        <p>Submission form for open-science project proposals </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all experimental">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/CNR_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html"> Magnetoencephalography system integrated for biomedical applications</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/CNR_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="https://www.isasi.cnr.it/" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="https://www.isasi.cnr.it/"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html">Magnetoencephalography system integrated for biomedical applications</a></h3>
+                                        <p>Interdisciplinary study of neurological syndromes such as preclinical phase of dementia (MCI), Alzheimer’s...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modeling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/INFN_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modeling</span>
+                                        <h3><a href="index.html">
+                                            Tools and pipelines for analyzing experimental and simulated brain activity</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/INFN_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="assets/images/project/project-23.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="index.html"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modeling</span>
+                                        <h3><a href="index.html">Tools and pipelines for analyzing experimental and simulated brain activity</a></h3>
+                                        <p>Co-design of the software tools provided by APE Lab in the field of both data analysis and development...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all experimental">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/CNR_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html">Technologies and expertise for neuro-functional imaging</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/CNR_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="https://www.ino.cnr.it/?author=13230&lang=it" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="https://www.ino.cnr.it/?author=13230&lang=it"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category"></span>
+                                        <h3><a href="index.html</span>
+                                        <h3><a href="index.html">Technologies and expertise for neuro-functional imaging</a></h3>
+                                        <p>In-vivo functional imaging with single cell resolution to study cortical physiology and patophysiology exploiting two-...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modeling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/ISS_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modeling</span>
+                                        <h3><a href="index.html">Data-driven large-scale models of cortical networks</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/ISS_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="assets/images/project/project-23.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="index.html"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modeling</span>
+                                        <h3><a href="index.html">Data-driven large-scale models of cortical networks</a></h3>
+                                        <p>"Access to a model of a cortical area spontaneous activity across the sleep/wake transition. Access to a ..."</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all development">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/CNR_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Research development</span>
+                                        <h3><a href="index.html">ETIC - EBRAINS Training and Innovation Center</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/CNR_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="https://www.istc.cnr.it/" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="https://www.istc.cnr.it/"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Research development</span>
+                                        <h3><a href="index.html">ETIC - EBRAINS Training and Innovation Center</a></h3>
+                                        <p>ETIC - EBRAINS-Italy Training and Innovation Centre: Physical Centre hosting training and innovation...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modelling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/POLIMI_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html"> Spiking neural network models and neurorobotics </a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/POLIMI_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="POLIMI Lab" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="POLIMI Lab"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html"> Spiking neural network models and neurorobotics </a></h3>
+                                        <p> Expertise on how to simulate large scale models made with spiking neural network and mean fields </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all development">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/CNR_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Research development</span>
+                                        <h3><a href="index.html">Advanced School in Computational Neuroscience and Neurorobotics</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/CNR_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="https://www.istc.cnr.it/" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="https://www.istc.cnr.it/"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Research development</span>
+                                        <h3><a href="index.html">Advanced School in Computational Neuroscience and Neurorobotics</a></h3>
+                                        <p>Digital School that comprises multiple "Learning Paths" encompassing 3-6 Learning Modules... </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all development">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/CNR_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Research development</span>
+                                        <h3><a href="index.html">EBRAINS-Italy: Innovation Pitches for Companies</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/CNR_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="https://www.istc.cnr.it/" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="index.html"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Research development</span>
+                                        <h3><a href="index.html">EBRAINS-Italy: Innovation Pitches for Companies</a></h3>
+                                        <p>Repository of self-contained Digital Pitches  on possible innovations of interest for companies...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all development">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/CNR_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Research development</span>
+                                        <h3><a href="index.html">Model-based ML pipeline for probing executive functions and automatic data analysis.</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/CNR_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="assets/images/project/project-22.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="index.html"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Research development<</span>
+                                        <h3><a href="index.html">Model-based ML pipeline for probing executive functions and automatic data analysis.</a></h3>
+                                        <p>Collection of behavioural data on executive functions based on a computer-based Wisconsin Card...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modelling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/POLITO_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Neuromorphic Computing Lab</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/POLITO_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="Politecnico di Torino" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="Politecnico di Torino"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Neuromorphic Computing Lab</a></h3>
+                                        <p>A cutting-edge Neuromorphic platform for the design and implementation of event-driven and...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modeling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/CNR_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modeling</span>
+                                        <h3><a href="index.html">Datasets on motor and cognitive processes in both human and animal models</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/CNR_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="assets/images/project/project-23.jpg" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="index.html"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modeling</span>
+                                        <h3><a href="index.html">Datasets on motor and cognitive processes in both human and animal models</a></h3>
+                                        <p>TBD</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modelling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/SISSA_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Intracellular and multi-site extracellular recording setup</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/SISSA_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="Joint lab SISSA + UNIMORE" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="Joint lab SISSA + UNIMORE"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Intracellular and multi-site extracellular recording setup</a></h3>
+                                        <p>Cellular and microcircuit electrophysiological recording setup with high temporal and spatial resolution.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modelling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/SNS_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Synactive toolbox, nanobody platform and electrophysiology</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/SNS_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="SNS - Scuola Normale Superiore" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="SNS - Scuola Normale Superiore"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Synactive toolbox, nanobody platform and electrophysiology</a></h3>
+                                        <p>Access to robust and validated nanobody platform and electrophysiology setup for... </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modelling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/SSSA_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">SSSA BRAIR Lab (BRAin-Inspired Robotics Laboratory)</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/SSSA_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="SSSA- Scuola Sant'Anna" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="SSSA- Scuola Sant'Anna"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">SSSA BRAIR Lab (BRAin-Inspired Robotics Laboratory)</a></h3>
+                                        <p>Robotic facilities for cutting-edge reasearch on brain-inspired robots and control systems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all experimental">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/UNIFI_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html">Advanced Biological Sensing</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/UNIFI_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="UNIFI- LENS" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="UNIFI- LENS"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html">Advanced Biological Sensing</a></h3>
+                                        <p>Advanced laser and spectroscopic facilities for biological sensing and diagnostics.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all experimental">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/UNIMI_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html">Analysis and acquisition of EEG, TMS-EEG and SEP</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/UNIMI_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="UNIMI- Università di Milano" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="UNIMI- Università di Milano"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html">Analysis and acquisition of EEG, TMS-EEG and SEP</a></h3>
+                                        <p>Curated and standardized perturbational atlas of cortical response in human subjects during different cognitive tasks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modelling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/UNIMORE_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Brain morphological and functional data by multimodal imaging</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/UNIMORE_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="UNIMORE- UNiversità di Modena e Reggio Emilia" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="UNIMORE- UNiversità di Modena e Reggio Emilia"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Brain morphological and functional data by multimodal imaging</a></h3>
+                                        <p>Morphological data, obtained with light-sheet microscopy, and functional data from electrophysiology in rodents.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modelling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/UNINA_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Mathematical models for complexity reduction of large neural networks</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/UNINA_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="UNINA- Università di Napoli Federco II" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="UNINA- Università di Napoli Federco II"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Mathematical models for complexity reduction of large neural networks</a></h3>
+                                        <p>Data-driven point-neuron models optimized on electrophysiological recordings from rodent cortex.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all experimental">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/UNIPD_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html">7 Tesla UHF MRI system (NO)</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/UNIPD_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="UNIPD- Università di Padova" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="UNIPD- Università di Padova"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html">7 Tesla UHF MRI system (NO)</a></h3>
+                                        <p>Experiments on the neural mechanisms of human cognition and behavior using ultra-high field MRI.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modelling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/UNIPV_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Brain Scaffold Builder, Virtual Brain, Digital Sapiens</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/UNIPV_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="UNIPV- Università di Pavia" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="UNIPV- Università di Pavia"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Brain Scaffold Builder, Virtual Brain, Digital Sapiens</a></h3>
+                                        <p>“Brain Scaffold Builder” (BSB) allows a detailed anatomical reconstruction of brain regions with cellular resolution.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modelling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/UNISS_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Full-scale model of a human hippocampus</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/UNISS_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="UNISS- Università di Sassari" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="UNISS- Università di Sassari"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Full-scale model of a human hippocampus</a></h3>
+                                        <p>Full-scale model available for a human hippocampus with cellular and synaptic resolution.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all experimental">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/UNIROMA1_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html">Tools development for investigating neural networks</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/UNIROMA1_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="Sapienza Università di Roma" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="Sapienza Università di Roma"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Experimental</span>
+                                        <h3><a href="index.html">Tools development for investigating neural networks</a></h3>
+                                        <p>Starting from temporal series derived from the brain imaging data, tools are developed for investigating neural networks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 masonry-item small-column all modelling">
+                        <div class="project-block-one">
+                            <div class="inner-box">
+                                <div class="static-content">
+                                    <figure class="image-box"><img src="assets/images/project/UNIROMA1_White.svg" alt=""></figure>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Electrophysiological characterization of neuron-glia interactions</a></h3>
+                                    </div>
+                                </div>
+                                <div class="overlay-content">
+                                    <div class="image-box">
+                                        <figure class="image"><img src="assets/images/project/UNIROMA1_Blue.svg" alt=""></figure>
+                                        <div class="view-btn"><a href="Sapienza Università di Roma" class="lightbox-image" data-fancybox="gallery"><i class="flaticon-zoom-in"></i></a></div>
+                                        <div class="link-btn"><a href="Sapienza Università di Roma"><i class="flaticon-right-arrow"></i></a></div>
+                                    </div>
+                                    <div class="lower-content">
+                                        <span class="category">Modelling</span>
+                                        <h3><a href="index.html">Electrophysiological characterization of neuron-glia interactions</a></h3>
+                                        <p>Neuron-neuron and neuron-glia signalling and its role in brain functions and diseases, explored through electrophysiology.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="more-btn centred">
+                <a href="research.html" class="theme-btn">Load More</a>
+            </div>
+        </div>
+    </section>
+    <!-- research-page-section end -->
+
+<!-- main-footer -->
+<footer class="main-footer">
+    <div class="auto-container">
+        <div class="widget-section">
+            <div class="row clearfix">
+                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                    <div class="footer-widget about-widget">
+                        <div class="widget-title">
+                            <h3>Who We Are</h3>
+                        </div>
+                        <div class="text">
+                            <p>We are the research center infrastructure of the future</p>
+                        </div>
+                        <div class="lower-box">
+                             <figure class="logo"><a href="index.html"><img src="assets/images/LogoLetters.png" alt="Logo"></a></figure> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                    <div class="footer-widget links-widget">
+                        <div class="widget-title">
+                            <h3>Policies </h3>
+                        </div>
+                        <div class="widget-content">
+                            <ul class="links-list clearfix">
+                                <li><a href="index.html"> Ethics </a></li>
+                                <li><a href="index.html"> Privacy </a></li>
+                                <li><a href="index.html">Open Access</a></li>
+                                <li><a href="index.html">Sustenability </a></li>
+                                <li><a href="index.html">Cookies</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                    <div class="footer-widget links-widget">
+                        <div class="widget-title">
+                            <h3>Guidelines </h3>
+                        </div>
+                        <div class="widget-content">
+                            <ul class="links-list clearfix">
+                                <li><a href="index.html">Terms of Use</a></li>
+                                <li><a href="index.html">Access</a></li>
+                                <li><a href="index.html">Data Management</a></li>
+                                <li><a href="index.html">Information & Communication </a></li>
+                                <li><a href="index.html">Acknowledgement </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 col-sm-12 footer-column">
+                    <div class="footer-widget links-widget">
+                        <div class="widget-title">
+                            <h3>Contact</h3>
+                        </div>
+                        <div class="widget-content">
+                            <ul class="links-list clearfix">
+                                <li><a href="index.html">General Inquiries </a></li>
+                                <li><a href="index.html">Join the EBRAINS-Italy </a></li>
+                                <li><a href= "index.html">Log In </a></li>
+                                <li><a href= "index.html">News Letter </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 footer-column">
+                    <div class="footer-widget post-widget">
+                        <div class="widget-title">
+                            <h3>Popular Post</h3>
+                        </div>
+                        <div class="post-inner">
+                            <div class="post">
+                                <figure class="post-thumb"><a href="blog-details.html"><img src="assets/images/resource/footer-post-1.jpg" alt=""></a></figure>
+                                <span class="post-date">16 July, 2022</span>
+                                <h5><a href="blog-details.html">All you Need to Know about this Liver Disease</a></h5>
+                            </div>
+                            <div class="post">
+                                <figure class="post-thumb"><a href="blog-details.html"><img src="assets/images/resource/footer-post-2.jpg" alt=""></a></figure>
+                                <span class="post-date">11 August, 2022</span>
+                                <h5><a href="blog-details.html">Ensure Your Product Quality with a Biogenix Lab</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- main-footer end -->
+
+
+<!-- scroll to top -->
+<button class="scroll-top scroll-to-target" data-target="html">
+    <i class="flaticon-up-arrow"></i>
+</button>
+
+</div>
+
+
+<!-- jequery plugins -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/owl.js"></script>
+<script src="assets/js/wow.js"></script>
+<script src="assets/js/validation.js"></script>
+<script src="assets/js/jquery.fancybox.js"></script>
+<script src="assets/js/appear.js"></script>
+<script src="assets/js/isotope.js"></script>
+<script src="assets/js/jquery.nice-select.min.js"></script>
+<script src="assets/js/circle-progress.js"></script>
+<script src="assets/js/jquery.countTo.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/timePicker.js"></script>
+
+<!-- main-js -->
+<script src="assets/js/script.js"></script>
+
+</body><!-- End of .page_wrapper -->
+</html>
