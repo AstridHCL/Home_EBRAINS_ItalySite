@@ -185,7 +185,7 @@ ul {
 ol,
 ul,
 dl {
-  margin-top: 0;
+  margin-top: 1px;
   margin-bottom: 1rem;
 }
 
@@ -301,6 +301,7 @@ img,
 svg {
   vertical-align: middle;
 }
+
 
 table {
   caption-side: bottom;
