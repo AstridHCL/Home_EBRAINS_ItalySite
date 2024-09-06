@@ -1766,6 +1766,9 @@ div#mCSB_1_container{
   line-height: 70px;
   font-size: 32px;
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   z-index: 1;
 }
@@ -2231,10 +2234,6 @@ div#mCSB_1_container{
   color: #16436f;
   transition: all 500ms ease;
   border: none;
-}
-
-.owl-carousel button span{
-  font-family: 'flaticon';
 }
 
 .nav-style-one button:hover{
@@ -2919,14 +2918,16 @@ div#mCSB_1_container{
 
 .funfact-block-one .inner-box .icon-box{
   position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
   width: 80px;
   height: 70px;
   line-height: 84px;
   font-size: 42px;
   text-align: center;
   margin-top: -36px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   z-index: 1;
 }
 
@@ -3646,9 +3647,9 @@ div#mCSB_1_container{
 
 .main-footer .links-widget .links-list li a:before{
   position: absolute;
-  content: "\f108";
-  font-family: 'flaticon';
-  font-size: 14px;
+  content: "→";
+  font-family: FontAwesome;
+  font-size: 12px;
   left: 0px;
   top: 0px;
   opacity: 0;
