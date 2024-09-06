@@ -212,7 +212,7 @@
     		active: true,
 			smartSpeed: 1000,
 			autoplay: 6000,
-            navText: [ '<span class="flaticon-left-arrow"></span>', '<span class="flaticon-right-arrow"></span>' ],
+            navText: [ '<span class="fa-solid fa-arrow-left"></span>', '<span class="fa-solid fa-arrow-right"></span>' ],
             responsive:{
                 0:{
                     items:1
@@ -239,7 +239,7 @@
 			nav:true,
 			smartSpeed: 500,
 			autoplay: 1000,
-			navText: [ '<span class="flaticon-left-arrow"></span>', '<span class="flaticon-right-arrow"></span>' ],
+			navText: [ '<span class="fa-solid fa-arrow-left"></span>', '<span class="fa-solid fa-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -301,7 +301,7 @@
 			nav:true,
 			smartSpeed: 500,
 			autoplay: 1000,
-			navText: [ '<span class="flaticon-left-arrow"></span>', '<span class="flaticon-right-arrow"></span>' ],
+			navText: [ '<span class="fa-solid fa-arrow-left"></span>', '<span class="fa-solid fa-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
@@ -332,7 +332,7 @@
 			nav:true,
 			smartSpeed: 500,
 			autoplay: 1000,
-			navText: [ '<span class="flaticon-left-arrow"></span>', '<span class="flaticon-right-arrow"></span>' ],
+			navText: [ '<span class="fa-solid fa-arrow-left"></span>', '<span class="fa-solid fa-arrow-right"></span>' ],
 			responsive:{
 				0:{
 					items:1
